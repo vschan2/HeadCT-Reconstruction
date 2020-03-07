@@ -5,6 +5,11 @@ Firstly, the program reads a volume dataset, and removes a whole slice at positi
 User can also choose to remove 2 or 3 slices. The slice removal can be removed at a specific sparsity s. 
 Then, the hole-filling method is employed to reconstruct the missing region.
 
+## Pre-requisite
+1) Microsoft Visual Studio
+2) The Visualization Toolkit (VTK)
+3) CMake
+
 ## How to run this example?
 1) Using CMake to create this project. The procedure is the same as any VTK projects.
 2) Build the project using Visual Studio. A new "Debug" folder will be created.
