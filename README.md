@@ -11,9 +11,11 @@ Then, the hole-filling method is employed to reconstruct the missing region.
 3) Put the volume dataset file (headsq) in the "Debug" folder.
 4) Open command prompt and navigate to the "Debug" folder.
 5) Run `HeadCTReconstruction *outputDatasetName(string) *sliceNo(int) *method(string) *parameter(int, float)`
+   
    e.g.:
 		```
 		HeadCTReconstruction headsq 7 mean 3
+
 		HeadCTReconstruction headsq 7 butterfly-my 0 3 0
 		```
 6) Then, input the number of continuous slice to remove.
@@ -21,7 +23,7 @@ Then, the hole-filling method is employed to reconstruct the missing region.
 8) Lastly, input the increment limit of sparsity value. If you want to remove 2 slices in every 7 slices spacing for 10 times: 2 -> 7 -> 10.
 9) The result is displayed. The output axial slices are stored in the "figures" folder.
 
-** NOTE: **
+**NOTE:**
 1) The dataset used in this example consists of 12-bits grey-scale pixel with little-endian arrangement.
 2) The input dataset is preset to "fullHeadRaw" folder. See main().
 
