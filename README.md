@@ -13,11 +13,10 @@ Then, the hole-filling method is employed to reconstruct the missing region.
 5) Run `HeadCTReconstruction *outputDatasetName(string) *sliceNo(int) *method(string) *parameter(int, float)`
    
    e.g.:
-		```
-		HeadCTReconstruction headsq 7 mean 3
-
-		HeadCTReconstruction headsq 7 butterfly-my 0 3 0
-		```
+```
+HeadCTReconstruction headsq 7 mean 3 
+HeadCTReconstruction headsq 7 butterfly-my 0 3 0
+```
 6) Then, input the number of continuous slice to remove.
 7) Input the sparsity value.
 8) Lastly, input the increment limit of sparsity value. If you want to remove 2 slices in every 7 slices spacing for 10 times: 2 -> 7 -> 10.
